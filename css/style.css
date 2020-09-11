@@ -11,7 +11,6 @@ body {
     font-weight: normal;
     background-color: #20202A;
     line-height: 1;
-    fo
 }
 
 
@@ -33,7 +32,7 @@ h2 {
 .judul {
     width: 600px;
     margin: auto;
-    padding: 30px 5px;
+    padding: 30px 1px;
 }
 
 div.mata {
@@ -42,7 +41,7 @@ div.mata {
     height: 72px;
     position: absolute;
     top: 80px;
-    margin-left: 80px;
+    margin-left: 90px;
     animation: saringgan 1.2s 1s infinite forwards;
 }
 
@@ -53,7 +52,7 @@ div .mata:hover {
 .container {
     width: 600px;
     background-color: #1D1C25;
-    margin:auto;
+    margin: auto;
     padding: 30px 5px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, .8);
     border-radius: 5px 5px 0 0;
@@ -258,36 +257,74 @@ div .mata:hover {
     }
 }
 
-@keyframes saringgan{
-	0%{
-		transform: rotate(0deg);
-		background: url(https://image.ibb.co/bJcErR/saringgan_1.png);
-	}
-	100%{
-		transform: rotate(360deg);
-		background: url(https://image.ibb.co/nEFOkm/saringgan_2.png);
-		
-	}
+@keyframes saringgan {
+    0% {
+        transform: rotate(0deg);
+        background: url(https://image.ibb.co/bJcErR/saringgan_1.png);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: url(https://image.ibb.co/nEFOkm/saringgan_2.png);
+
+    }
 }
 
+@media screen and (max-width: 767px) {
 
+    .judul {
+        margin-left: -70px;
+        margin-top: -40px;
+    }
 
+    .judul h1 {
+        font-size: 40px;
+    }
 
+    .judul h2 {
+        font-size: 15px;
+        margin-left: -50px;
+    }
 
+    div.mata {
+        margin-top: -40px;
+        margin-left: 90px;
+    }
 
+    .credit {
+        max-width: ;width: 390px;
+    }
 
+    .gallery {
+        margin: auto;
+        margin-left: -0px;
+    }
 
+    .overlay img {
+        max-height: 30%;
+        margin-left: -200px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+    }
 
+    .overlay .close {
+        margin-left: -130px;
+    }
 
+    .next,
+    .prev {
+        width: 57px;
+        height: 93px;
+        background: url(https://image.ibb.co/cmACd6/prev.png);
+        position: absolute;
+        text-indent: -9999px;
+        top: 36%;
+        margin-left: -80px;
+        opacity: 0;
+    }
 
+    .prev {
+        background-image: url(https://image.ibb.co/m9aZrR/next.png);
+        margin-left: -190px;
+    }
 
-
-
-
-
-
-
-
-
-
-
+}
